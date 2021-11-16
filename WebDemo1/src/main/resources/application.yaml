@@ -1,0 +1,16 @@
+## 设置内嵌Tomcat端口号和上下文根
+#server:
+#  port: 8888
+#  servlet:
+#    context-path: /nnn
+
+# 多环境配置application-xxx.yml
+#spring:
+#  profiles:
+#    active: /xxx
+
+#连接redis
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
