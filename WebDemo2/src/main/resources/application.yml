@@ -1,0 +1,19 @@
+## 设置允许自定义编码格式
+#server:
+#  servlet:
+#    encoding:
+#      enabled: false
+
+
+server:
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+
+
+spring:
+  mvc:
+    view:
+      prefix: /src/main/webapp/WEB-INF/views/
+      suffix: .jsp

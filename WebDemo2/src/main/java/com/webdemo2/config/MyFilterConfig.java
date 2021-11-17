@@ -16,7 +16,7 @@ public class MyFilterConfig {
                 new FilterRegistrationBean(new MyFilter());
 
         // 添加过滤（响应的）页面
-        filterRegistrationBean.addUrlPatterns("/user/*");
+        filterRegistrationBean.addUrlPatterns("/user/con/*");
 
         return filterRegistrationBean;
     }

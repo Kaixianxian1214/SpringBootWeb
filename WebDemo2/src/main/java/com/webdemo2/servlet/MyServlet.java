@@ -11,13 +11,15 @@ import java.io.IOException;
 public class MyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("My springboot Servlet");
+        resp.getWriter().println("世界你好呀，My springboot Servlet");
+        // 统一设置浏览器编码格式
+        resp.setContentType("text/html;character=utf-8");
         resp.getWriter().flush();
         resp.getWriter().close();
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        doGet(req, resp);
     }
 }
