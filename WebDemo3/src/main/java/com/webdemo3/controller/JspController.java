@@ -11,4 +11,10 @@ public class JspController {
     public String detail(){
         return "detail";
     }
+
+    @RequestMapping("detai")
+    @ResponseBody
+    public String show(){
+        return "show";
+    }
 }

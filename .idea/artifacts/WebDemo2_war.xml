@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="WebDemo2-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="SpringBootWar.war">
       <element id="artifact" artifact-name="WebDemo2:war exploded" />
     </root>
   </artifact>
