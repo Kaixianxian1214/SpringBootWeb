@@ -1,0 +1,4 @@
+# 设置thymeleaf模板引擎的缓存，设置为false关闭，默认开启
+spring:
+  thymeleaf:
+    cache: false

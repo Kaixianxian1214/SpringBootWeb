@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:tx="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>标准变量表达：${} --> 推荐</h1>
+用户编号：<span th:text="${user.id}"/><br/>
+用户姓名：<span th:text="${user.name}"/><br/>
+用户年龄：<span th:text="${user.age}"/><br/>
+
+<h1>选择变量表达式（星号表达式）：*{} --> 不推荐</h1>
+<!--
+    *{}必须使用th:object属性来绑定这个对象
+-->
+<div th:object="${user}">
+    用户编号：<span th:text="*{id}"/><br/>
+    用户姓名：<span th:text="*{name}"/><br/>
+    用户年龄：<span th:text="*{age}"/><br/>
+</div>
+
+<h1>标签表达式与选择变量表达式的混合使用*{} --> 不推荐</h1>
+用户编号：<span th:text="*{user.id}"/><br/>
+用户姓名：<span th:text="*{user.name}"/><br/>
+用户年龄：<span th:text="*{user.age}"/><br/>
+</body>
+</html>

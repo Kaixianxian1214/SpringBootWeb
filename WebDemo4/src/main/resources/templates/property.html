@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get" action="http://localhost:8080/test">
+    用户编号：<input type="text" name="id"/><br/>
+    用户姓名：<input type="text" name="name"/><br/>
+    用户年龄：<input type="text" name="age"/><br/>
+    <input type="submit" value="submit">
+</form>
+
+<form method="get" th:action="@{/test}">
+    用户编号：<input type="text" name="id"/><br/>
+    用户姓名：<input type="text" name="name"/><br/>
+    用户年龄：<input type="text" name="age"/><br/>
+    <input type="submit" value="submit">
+</form>
+
+</body>
+</html>
